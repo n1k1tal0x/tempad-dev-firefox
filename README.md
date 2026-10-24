@@ -1,3 +1,12 @@
+> **Unofficial Firefox fork.** This fork adds Firefox support to [ecomfe/tempad-dev](https://github.com/ecomfe/tempad-dev). Only the CSS inspector in Figma Design files has been verified; plugins and MCP are untested in Firefox.
+>
+> **Install (temporary, until Firefox restarts):**
+> 1. `pnpm install && pnpm --filter @tempad-dev/shared build && pnpm --filter @tempad-dev/plugins build`
+> 2. `pnpm --filter @tempad-dev/extension build:firefox`
+> 3. Open `about:debugging#/runtime/this-firefox` → **Load Temporary Add-on…** → pick `packages/extension/.output/firefox-mv3/manifest.json`.
+>
+> For a permanent install, sign the build (`zip:firefox`) via addons.mozilla.org as unlisted.
+
 <p align="center">
   <picture>
     <source media="(prefers-color-scheme: dark)" srcset="packages/site/public/marketing/hero-dark.svg">
